@@ -1,0 +1,26 @@
+
+.nav-item{
+    border-right: 1px solid #ccc !important;
+}
+.nav-link{
+    color: black;
+    font-size: 18px;
+}
+.breadcrumb{
+    margin: 3rem 0;
+}
+.breadcrumb-item.active{
+    margin-top: 5px;
+}
+.sticky-title {
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px solid #ddd8d8;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.sticky-title span{
+    background: #fff;
+    padding: 0 30px;
+}
