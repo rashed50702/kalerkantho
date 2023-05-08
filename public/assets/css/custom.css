@@ -6,6 +6,16 @@
     color: black;
     font-size: 18px;
 }
+.show-logo{
+    display: block;
+}
+.hide-logo{
+    display: none;
+}
+.fixed-top{
+    box-shadow: 1px 9px 18px -4px rgba(0, 0, 0, .4);
+    transition: top 1s;
+}
 .breadcrumb{
     margin: 3rem 0;
 }
