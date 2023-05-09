@@ -186,3 +186,318 @@ a p{
     font-size: 18px;
 }
 /* End of sobishesh section */
+
+/* Video Gallery */
+.video_gallery{
+    padding: 0 0 20px;
+    background: rgba(0,0,0,.7);
+    height: auto;
+}
+.video_gallery .sticky-title{
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #000;
+    text-align: center;
+    padding: 1rem 0;
+    white-space: nowrap;
+    position: sticky;
+}
+.video_gallery .sticky-title a{
+    color: white;
+}
+.video_gallery .pb-video{
+    margin-bottom: 15px;
+}
+.video_gallery .pb-video a{
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.video_gallery .pb-video-frame{
+    width: 100%;
+    height: 230px;
+    transition: width 2s,height 2s;
+    object-fit: cover;
+}
+
+.video_gallery .pb-video a label{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    background: #000;
+    padding: 8px 5px;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 20px;
+}
+.video_gallery .bi-play-btn-fill{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    font-size: 30px;
+    color: red;
+    width: 45px;
+    margin: 0 auto;
+    opacity: .8;
+}
+.video_gallery .midVideo .pb-video a label{
+    padding: 26px 5px;
+}
+.video_gallery .midVideo .bi-play-btn-fill{
+    top: 45%;
+    font-size: 40px;
+}
+.video_gallery .pb-video-frame-lead{
+    width: 100%;
+    height: 474px;
+    transition: width 2s,height 2s;
+    object-fit: cover;
+}
+/* End of Video Gallery */
+
+/* miscellaneous */
+.miscellaneous .list-unstyled img{
+    height: 85px;
+    object-fit: cover;
+}
+/* End of miscellaneous */
+
+
+/* photogallery */
+.photogallery .gallery a{
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.photogallery .gallery .smallPhoto a img{
+    height: 183px;
+    object-fit: cover;
+}
+.photogallery .gallery a img {
+    transition: transform .4s;
+}
+.photogallery .gallery a span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 24px;
+    color: #fff;
+    z-index: 1;
+    padding: 10px;
+}
+.photogallery .gallery a:after{
+    content: "";
+    background: linear-gradient(180deg, transparent 10.87%, rgba(0, 0, 0, .6) 53.06%, #000);
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+/* End of photogallery */
+
+/* astrology */
+.section-astrology .astrology{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #f3f3f3;
+    border: 1px solid #e2e2e2;
+    padding: 15px;
+}
+.section-astrology .astrology li{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1 1;
+    list-style: none;
+    margin: 5px;
+    cursor: pointer;
+}
+.section-astrology .astrology li h5,
+.section-astrology .astrology li p{
+    margin: 0;
+}
+.section-astrology .astrology li figure{
+    width: 125px;
+    height: 125px;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    box-shadow: 0 2px 4px #00000029;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.section-astrology .astrology li img{
+    width: 70px!important;
+    margin: 0 auto;
+}
+.section-astrology .card .card-header{
+    font-size: 28px;
+}
+.section-astrology .card .card-header time{
+    font-size: 18px;
+    color: #ed2f3c;
+}
+.section-astrology .card .card-text{
+    font-size: 18px;
+}
+.poll-wrapper h2{
+    position: relative;
+    margin-bottom: 0;
+}
+.poll-wrapper .poll-area{
+    margin: 15px 0 0;
+}
+.poll-wrapper input[type=checkbox],
+.poll-wrapper input[type=radio]{
+    display: none;
+}
+.poll-wrapper .poll-area label{
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    border: 2px solid #e6e6e6;
+    transition: all .2s ease;
+}
+.poll-wrapper label .row{
+    display: flex;
+    pointer-events: none;
+    justify-content: space-between;
+}
+.poll-wrapper label .row .column{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.poll-wrapper label .row .circle{
+    height: 19px;
+    width: 19px;
+    display: block;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+}
+.poll-wrapper label .row span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.poll-wrapper .poll-area label:hover .row .circle:after{
+    display: block;
+    background: #e6e6e6;
+}
+.poll-wrapper label.selected .row .circle:after{
+    display: block;
+    background: #6665ee!important;
+}
+.poll-wrapper label .row .circle:after{
+    content: "";
+    height: 11px;
+    width: 11px;
+    background: #6665ee;
+    border-radius: inherit;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    display: none;
+}
+/* End of astrology */
+
+/* footer */
+.footer-section{
+    position: relative;
+    margin-bottom: 110px;
+}
+.footer-content{
+    position: relative;
+    z-index: 2;
+}
+.footer-widget-heading h3{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+.footer-widget-heading h3:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #ff5e14;
+}
+.footer-section ul{
+    margin: 0;
+    padding: 0;
+}
+.footer-widget ul li{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin-bottom: 12px;
+}
+.footer-widget ul li a{
+    color: #878787;
+    text-transform: capitalize;
+}
+.footer-social-icon span{
+    color: #000;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.footer-social-icon a{
+    color: #000;
+    margin-right: 15px;
+}
+.footer-social-icon i{
+    font-size: 20px;
+}
+.footer-social-icon .bi-facebook {
+    color: #3b5998;
+}
+.footer-social-icon .bi-twitter{
+    color: #55acee;
+}
+.footer-social-icon .bi-youtube{
+    color: #ff0302;
+}
+/* End of footer */
+
+/* copyright */
+.copyright-area{
+    padding: 25px 0;
+}
+.copyright-text p{
+    margin: 0;
+    font-size: 16px;
+    color: #878787;
+}
+.footer-menu li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.footer-menu li a{
+    font-size: 16px;
+    color: #878787;
+}
+/* End of copyright */

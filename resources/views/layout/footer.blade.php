@@ -10,8 +10,12 @@
                                     <h3>মোবাইল অ্যাপস ডাউনলোড করুন</h3>
                                 </div>
                                 <ul>
-                                    <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.kalerkantho&amp;hl=bn&amp;gl=US"><img alt="" loading="lazy" width="160" height="58" decoding="async" data-nimg="1" class="w-75 h-auto" style="color:transparent" srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fandroid.22a14a78.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fandroid.22a14a78.png&amp;w=384&amp;q=75 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fandroid.22a14a78.png&amp;w=384&amp;q=75"></a></li>
-                                    <li><a target="_blank" href="https://apps.apple.com/us/app/kaler-kantho/id1067229620"><img alt="" loading="lazy" width="160" height="58" decoding="async" data-nimg="1" class="w-75 h-auto" style="color:transparent" srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIos-app.0c819c2e.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIos-app.0c819c2e.png&amp;w=384&amp;q=75 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIos-app.0c819c2e.png&amp;w=384&amp;q=75"></a></li>
+                                    <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.kalerkantho&amp;hl=bn&amp;gl=US">
+                                            <img alt="" loading="lazy" width="160" height="58" decoding="async" data-nimg="1" class="w-75 h-auto" style="color:transparent" src="{{asset('/')}}img/android.png"></a>
+                                    </li>
+                                    <li><a target="_blank" href="https://apps.apple.com/us/app/kaler-kantho/id1067229620">
+                                        <img alt="" loading="lazy" width="160" height="58" decoding="async" data-nimg="1" class="w-75 h-auto" style="color:transparent" src="{{asset('/')}}img/Ios-app.png"></a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="clearfix"></div>
