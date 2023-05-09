@@ -21,12 +21,20 @@ nav .nav-item{
 .breadcrumb-item.active{
     margin-top: 5px;
 }
-.sticky-title {
+
+.section{
+    margin-top: 50px;
+}
+.section .sticky-title {
     width: 100%;
     text-align: center;
     border-bottom: 5px solid #ddd8d8;
     line-height: 0.1em;
     margin: 10px 0 20px;
+}
+.section .sticky-title a {
+    background: #fff;
+    padding: 0 30px;
 }
 
 a{
@@ -37,10 +45,12 @@ a{
 a:hover p{
     color: black;
 }
-
-.sticky-title span{
-    background: #fff;
-    padding: 0 30px;
+a p{
+    color: #5a5a5a !important;
+}
+.list-group-item{
+    position: relative;
+    display: block;
 }
 
 .border-secondary{
@@ -53,6 +63,7 @@ a:hover p{
 .lead_area h1{
     font-size: 28px;
 }
+
 
 /* Tabs Area style */
 .tabs_area .nav-item {
@@ -102,6 +113,9 @@ a:hover p{
 
 
 /* highlight more items */
+.col{
+    flex: 1 0;
+}
 .highlightMoreIteam{
     display: flex;
     flex-wrap: wrap;
@@ -113,15 +127,62 @@ a:hover p{
     padding-bottom: 0;
     margin-top: 10px;
     margin-bottom: 0;
+    border: unset;
+}
+
+.leadArea .list-group-item {
+    min-height: 73px;
+}
+.highlightMoreIteam li{
+    list-style: none;
+    flex: 0 0 33.333333%;
+    overflow: hidden;
+    padding-right: 15px !important;
+}
+.highlightMoreIteam li{
+    border-bottom: unset !important;
 }
 .highlightMoreIteam li a{
+    border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-        border-top: 1px solid #ccc;
-        width: 100%;
-        display: block;
-        padding-top: 10px;
-        padding-bottom: 0;
-        margin-bottom: 10px;
-        height: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    height: 100%;
 }
 /* End of highlight more items */
+
+/* Anniversary Section */
+.anniversary{
+    margin-top: 20px;
+    background: #bde9fc;
+}
+.anniversary_title{
+    width: 100%;
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00814e;
+}
+.anniversary_title_text{
+    height: 60px;
+    vertical-align: middle;
+    padding-left: 15px;
+    font-size: 28px;
+    color: black;
+}
+/* End of anniversary section */
+
+/* sobishesh section */
+.sobishesh .nav-tabs .nav-link{
+    color: #aaa;
+}
+.sobishesh .nav-tabs .nav-link.active{
+    border-bottom: 2px solid blue !important;
+    color: #222;
+}
+.sobishesh .list-unstyled a h5{
+    font-size: 18px;
+}
+/* End of sobishesh section */
