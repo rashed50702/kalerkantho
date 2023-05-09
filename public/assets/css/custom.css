@@ -1,5 +1,4 @@
-
-.nav-item{
+nav .nav-item{
     border-right: 1px solid #ccc !important;
 }
 .nav-link{
@@ -30,7 +29,99 @@
     margin: 10px 0 20px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover p{
+    color: black;
+}
+
 .sticky-title span{
     background: #fff;
     padding: 0 30px;
 }
+
+.border-secondary{
+    border-color: #6c757d !important;
+}
+.border-end{
+    border-right: 1px solid #dee2e6 !important;
+    border-left: 1px solid #dee2e6 !important;
+}
+.lead_area h1{
+    font-size: 28px;
+}
+
+/* Tabs Area style */
+.tabs_area .nav-item {
+    width: 33%;
+    font-size: 16px;
+}
+
+.tabs_area .nav-tabs .nav-link{
+    display: block;
+    width: 100%;
+    color: rgba(0, 0, 0, .7);
+    border: unset;
+    border-radius: unset;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.nav-tabs .nav-link.active,
+.tabs_area .nav-tabs .nav-item.show .nav-link{
+    color: red;
+}
+.tabs_area .section-list li span{
+    color: #ed1c24;
+}
+.tabs_area .section-list li time{
+    color: #3e4750;
+    float: left;
+    padding-right: 4px;
+}
+
+.tabs_area .tab-content .list-group{
+    height: 400px;
+    overflow-y: scroll;
+}
+.tabs_area .section-list li{
+    position: relative;
+    min-height: auto;
+}
+
+.tabs_area .section-list li:before{
+    position: absolute;
+    left: 0;
+    color: #ed1c24;
+    top: 11px;
+}
+/* End Of Tabs Area style */
+
+
+/* highlight more items */
+.highlightMoreIteam{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.highlightMoreIteam .list-group-item,
+.highlightMoreIteam .list-group-item:last-child{
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.highlightMoreIteam li a{
+    border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        width: 100%;
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+        height: 100%;
+}
+/* End of highlight more items */

@@ -1,6 +1,7 @@
 @extends('layout.master')
 
 @section('content')
+<div class="my-4"></div>
 <!-- Lead Area Start -->
 <section class="lead_area">
     <div class="container">
@@ -48,24 +49,13 @@
             <div class="row">
                 <div class="col">
                     <ul class="w-100 highlightMoreIteam mb-0">
-                        <li class="list-group-item px-0"><a href="/online/world/2023/05/08/1278005">
+                        @for($i = 0; $i < 6; $i++)
+                        <li class="list-group-item px-0">
+                            <a href="#">
                                 <h5>অভিষেকের পর রাজা চার্লসের জন্য যেসব চ্যালেঞ্জ রয়েছে</h5>
-                            </a></li>
-                        <li class="list-group-item px-0"><a href="/online/sport/2023/05/08/1278000">
-                                <h5>আজও কি কলকাতার 'অটোচয়েস' সুনিল নারাইন?</h5>
-                            </a></li>
-                        <li class="list-group-item px-0"><a href="/online/country-news/2023/05/08/1277997">
-                                <h5>কমিশন প্রতিটা নির্বাচনের ব্যাপারে খুবই সতর্ক : ইসি হাবিব</h5>
-                            </a></li>
-                        <li class="list-group-item px-0"><a href="/online/sport/2023/05/08/1277996">
-                                <h5>সাফের অষ্টম দল লেবানন</h5>
-                            </a></li>
-                        <li class="list-group-item px-0"><a href="/online/world/2023/05/08/1277993">
-                                <h5>বিলাওয়াল সন্ত্রাসবাদের রক্ষক-মুখপাত্র : জয়শঙ্কর</h5>
-                            </a></li>
-                        <li class="list-group-item px-0"><a href="/online/sport/2023/05/08/1277991">
-                                <h5>রিয়ালকে অভিনন্দন জানাল বার্সেলোনা</h5>
-                            </a></li>
+                            </a>
+                        </li>
+                        @endfor
                     </ul>
                 </div>
             </div>
@@ -106,7 +96,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="tabsArea">
+            <div class="tabs_area">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation"><button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#tabPane1" type="button" role="tab" aria-controls="tabPane1" aria-selected="true">সর্বশেষ</button></li>
                     <li class="nav-item" role="presentation"><button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#tabPane2" type="button" role="tab" aria-controls="tabPane2" aria-selected="false" tabindex="-1">দিনের সেরা</button></li>
@@ -115,23 +105,53 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade active show" id="tabPane1" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                         <ul class="section-list list-group list-group-flush pt-3">
-                            <li class="bi bi-play-fill list-group-item"><a href="/online/sport/2023/05/08/1278022">আর্জেন্টিনায় দুই ক্লাবের ফুটবলারদের মারামারি; ৭ লাল কার্ড!</a>
-                                <div class="clearfix"></div><time><i class="bi bi-stopwatch"></i> ৪৫ সেকেন্ড আগে |</time><span>খেলা</span>
+                            @for($i = 0; $i < 10; $i++)
+                            <li class="bi bi-play-fill list-group-item">
+                                <a href="#">আর্জেন্টিনায় দুই ক্লাবের ফুটবলারদের মারামারি; ৭ লাল কার্ড!</a>
+                                <div class="clearfix"></div>
+                                <time>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12h2c0 5.514 4.486 10 10 10s10-4.486 10-10-4.486-10-10-10c-2.777 0-5.287 1.141-7.099 2.977l2.061 2.061-6.962 1.354 1.305-7.013 2.179 2.18c2.172-2.196 5.182-3.559 8.516-3.559 6.627 0 12 5.373 12 12zm-13-6v8h7v-2h-5v-6h-2z" />
+                                    </svg>
+                                    ৪৫ সেকেন্ড আগে |
+                                </time>
+                                <span>খেলা</span>
                             </li>
+                            @endfor
                         </ul>
                     </div>
                     <div class="tab-pane fade" id="tabPane2" role="tabpanel" aria-labelledby="profile-tab" tabindex="1">
                         <ul class="section-list list-group list-group-flush pt-3">
-                            <li class="bi bi-play-fill list-group-item"><a href="/online/miscellaneous/2023/05/08/1277969">ধানমন্ডি লেকে পদ্মফুলের আড়ালে ভেসে উঠল লাশ!</a>
-                                <div class="clearfix"></div><time><i class="bi bi-stopwatch"></i> ৩ ঘণ্টা আগে |</time><span>বিবিধ</span>
+                            @for($i = 0; $i < 10; $i++)
+                            <li class="bi bi-play-fill list-group-item">
+                                <a href="#">ধানমন্ডি লেকে পদ্মফুলের আড়ালে ভেসে উঠল লাশ!</a>
+                                <div class="clearfix"></div>
+                                <time>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12h2c0 5.514 4.486 10 10 10s10-4.486 10-10-4.486-10-10-10c-2.777 0-5.287 1.141-7.099 2.977l2.061 2.061-6.962 1.354 1.305-7.013 2.179 2.18c2.172-2.196 5.182-3.559 8.516-3.559 6.627 0 12 5.373 12 12zm-13-6v8h7v-2h-5v-6h-2z" />
+                                    </svg>
+                                    ৩ ঘণ্টা আগে |
+                                </time>
+                                <span>বিবিধ</span>
                             </li>
+                            @endfor
                         </ul>
                     </div>
                     <div class="tab-pane fade" id="tabPane3" role="tabpanel" aria-labelledby="profile-tab" tabindex="1">
                         <ul class="section-list list-group list-group-flush pt-3">
-                            <li class="bi bi-play-fill list-group-item"><a href="/online/national/2023/05/02/1276158">সাইবার জগতে তিন ব্যক্তির দেশবিরোধী প্রচারণা</a>
-                                <div class="clearfix"></div><time><i class="bi bi-stopwatch"></i> ৫ দিন আগে |</time><span>জাতীয়</span>
+                            @for($i = 0; $i < 10; $i++)
+                            <li class="bi bi-play-fill list-group-item">
+                                <a href="#">সাইবার জগতে তিন ব্যক্তির দেশবিরোধী প্রচারণা</a>
+                                <div class="clearfix"></div>
+                                <time>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12h2c0 5.514 4.486 10 10 10s10-4.486 10-10-4.486-10-10-10c-2.777 0-5.287 1.141-7.099 2.977l2.061 2.061-6.962 1.354 1.305-7.013 2.179 2.18c2.172-2.196 5.182-3.559 8.516-3.559 6.627 0 12 5.373 12 12zm-13-6v8h7v-2h-5v-6h-2z" />
+                                    </svg>
+                                    ৫ দিন আগে |
+                                </time>
+                                <span>জাতীয়</span>
                             </li>
+                            @endfor
                         </ul>
                     </div>
                 </div>
@@ -151,6 +171,8 @@
     </div>
 </section>
 <!-- Lead Area End -->
+
+<div class="my-4"></div>
 
 <!-- Anniversary Section Start -->
 <section class="anniversary">
