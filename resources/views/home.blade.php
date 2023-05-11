@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                <a href="/online/campus-online/2023/05/08/1278019">
+                <a href="#">
                     <div class="row">
                         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
                             <h1 class="d-none d-sm-block">ধর্ষণ মামলায় খুকৃবির সাবেক উপাচার্য কারাগারে</h1>
@@ -21,15 +21,8 @@
                     </div>
                 </a>
                 <hr>
-                <div class="row highlight-news2">
-                    <div class="col-12 col-md-6 col-lg-6 border-end"><a class="list-group-item" href="/online/national/2023/05/08/1278013">
-                            <h5>হঠাৎ বাড়ছে ডেঙ্গু, নতুন করে হাসপাতালে ৩৪</h5>
-                            <p class="mb-0">হঠাৎ করেই বাড়ছে ডেঙ্গু জ্বর। হাসপাতালে ভর্তি বেড়েছে ডেঙ্গু আক্রান্ত রোগীদের। দেশ...</p>
-                        </a></div>
-                    <div class="col-12 col-md-6 col-lg-6 border-end"><a class="list-group-item" href="/online/national/2023/05/08/1278009">
-                            <h5>‘নগরীর বৃক্ষ নিধনের পরিণতি হবে ভয়াবহ’</h5>
-                            <p class="mb-0">'আইনের তোয়াক্কা না করে নির্বিচারে গাছ কেটে সড়কদ্বীপ উন্নয়ন পরিবেশ ও জনস্বা...</p>
-                        </a></div>
+                <div class="row highlight-news">
+                    @include('home.highlight-news')
                 </div>
                 <hr>
                 <div class="row highlight-img">
