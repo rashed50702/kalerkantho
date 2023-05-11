@@ -1,4 +1,4 @@
-<section class="video_gallery">
+<section class="section video_gallery">
     <div class="container">
         <h1 class="sticky-title"><a href="#">ভিডিও গ্যালারি</a></h1>
         <div class="row">

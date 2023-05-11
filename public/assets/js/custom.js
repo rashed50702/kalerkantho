@@ -43,15 +43,24 @@ document.addEventListener("DOMContentLoaded", function () {
             navbar_height = document.querySelector('.navbar').offsetHeight;
             document.body.style.paddingTop = navbar_height + 'px';
 
+            //show left logo
             document.getElementById("logo").style.display = "block";
 
+            // 
+            document.getElementById("navbar-text-btn").style.display = "none";
         } else {
             document.getElementById('navbar_top').classList.remove('fixed-top');
             // remove padding top from body
             document.body.style.paddingTop = '0';
             
+            //remove left logo
             document.getElementById("logo").style.display = "none";
+
+            document.getElementById("navbar-text-btn").style.display = "block";
         }
     });
 });
 // DOMContentLoaded  end
+
+// RightSide Menu show/hide on click
+
