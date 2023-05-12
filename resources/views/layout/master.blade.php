@@ -29,6 +29,8 @@
     @include('layout.footer')
     @include('layout.footer-ads')
 
+
+    <a id="back-to-top"  style="display:none;" title="Back to top" href="/#" class="show"><i class="bi bi-chevron-up"></i></a>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

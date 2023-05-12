@@ -43,6 +43,12 @@
 <!-- section2 end -->
 
 
+<!-- section carousel start -->
+@include('home.carousel')
+<!-- section carousel end -->
+
+
+
 <!-- section3 start -->
 @include('home.national_and_politics')
 <!-- section3 end -->
